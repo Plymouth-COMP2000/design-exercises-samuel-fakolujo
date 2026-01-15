@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <!-- Category buttons (VERTICAL) -->
+    <LinearLayout
+        android:id="@+id/categoryButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnStarters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starters" />
+
+        <Button
+            android:id="@+id/btnMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Main Course"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnSides"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sides"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnDesserts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desserts"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drinks"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvSelectedCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starters"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="6dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
